@@ -265,8 +265,6 @@ details of the 10 runs can be found just above it with a single-column table
 
 ***Note:*** *You can click a figure on the left side to see its original figure.*
 
-Data files, especially the Excel files with data, can be found in [this folder](docs/results).
-
 ### Figures
 
 <table>
@@ -285,14 +283,14 @@ An example HorseIR module
 <tr>
 <td width="50%"> <img src="docs/fig/fig_7.png" /> </td>
 <td> 
-See details in <a href="exp/plot">Data and scripts for Figure 7.</a>.
+See details in <a href="exp/plot">data and scripts for Figure 7.</a>.
 </td>
 </tr>
 
 <tr>
 <td> <img src="docs/fig/fig_8.png" /> </td>
 <td> 
-See details in <a href="exp/plot">Data and scripts for Figure 8.</a>.
+See details in <a href="exp/plot">data and scripts for Figure 8.</a>.
 </td>
 </tr>
 </table>
