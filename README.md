@@ -184,7 +184,7 @@ Create a datafarm
     monetdbd start TPCH
 ```
 
-Create and release database 'tpch1' (similar for database tpch2/4/8/16 and pl)
+Create and release database 'tpch1' (similar for database tpch2/4/8/16)
 
 ```shell
     monetdb create tpch1
@@ -215,7 +215,6 @@ copies can be avoided.
 ```shell
     cd src/HorseIR/data
     ln -s <DIR_EXP>/tpch-tbl tpch
-    ln -s <DIR_EXP>/script-pl/data pl
 ```
 
 <p align="right"> <a href="#horseir"> Back to top </a> </p>
@@ -307,7 +306,7 @@ See details in <a href="exp/plot">data and scripts for Figure 8.</a>.
 <td width="50%"> <img src="docs/fig/table_2_query_details.png" /> </td>
 <td> 
 See details in
-<a href="exp/exp/query/chf">Selected 8 queries</a>
+<a href="exp/query/chf">the selected 8 queries</a>
 </td>
 </tr>
 
