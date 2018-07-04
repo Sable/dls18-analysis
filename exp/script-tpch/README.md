@@ -20,7 +20,7 @@
 
 For example, return 3 lines after matching `avg_query` in `sf1/log_thread_1.log`:
 
-    grep -A 3 avg_query sf1/log_thread_1.log
+    >> grep -A 3 avg_query sf1/log_thread_1.log
 
     | avg_query1               |
     +==========================+

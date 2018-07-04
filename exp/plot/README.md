@@ -1,9 +1,5 @@
 ## Figure 7
 
-Name:
-
-    fig_7.png
-
 Script:
 
     plot_fig_7.r
@@ -16,11 +12,11 @@ Required:
     sf8/
     sf16/
 
+Output:
+
+![](../../docs/fig/fig_7.png)
+
 ## Figure 8
-
-Name:
-
-    fig_8.png
 
 Script:
 
@@ -29,4 +25,8 @@ Script:
 Required:
 
     geomeans.dat
+
+Output:
+
+![](../../docs/fig/fig_8.png)
 
