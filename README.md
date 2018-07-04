@@ -153,15 +153,6 @@ programs.](https://www.monetdb.org/Documentation/Guide/Installation)
 
 ### HorseIR System
 
-Download HorseIR project from GitHub
-
-TODO: add a released version
-
-```shell
-    git clone git@github.com:Sable/HorsePower.git
-    cd HorsePower
-```
-
 Download and install libraries (about 7 minutes)
 
 ```shell
@@ -170,9 +161,7 @@ Download and install libraries (about 7 minutes)
 
 Setup experiments
 
-```shell
-    (cd exp && sh build.sh)
-```
+*Pending*
 
 <p align="right"> <a href="#horseir"> Back to top </a> </p>
 
@@ -262,15 +251,11 @@ Then, a new terminal should be opened and run MonetDB with the following command
 Finally, exit mserver5 by typing `\q` or `CTRL+D`.
 Repeat the process for SF 2, 4, 8, and 16.
 
-In each log file (i.e. `<DIR_EXP>/script-tpch/summery\*.log`), search for the
+In each log file (e.g. `<DIR_EXP>/script-tpch/sf1/\*.log`), search for the
 keyword `avg_query` to identify **the average of the last 10 runs**.  The
 details of the 10 runs can be found just above it with a single-column table
 (i.e. query\_time).
 
-For example, the result (ms) of query 3 in SF 1 (saved in summary1.log).
-
-```no-highlight
-```
 
 ### 4.2 Run HorseIR with TPC-H queries
 
@@ -332,11 +317,11 @@ See details in
 <td> <img src="docs/fig/table_3_speedup.png" /> </td>
 <td> 
 See details in 
-<a href="./exp/script-tpch/sf1/log_sf1.tar.gz">MonetDB-thread-1-log</a>,
-<a href="./exp/script-tpch/sf2/log_sf2.tar.gz">MonetDB-thread-2-log</a>,
-<a href="./exp/script-tpch/sf4/log_sf4.tar.gz">MonetDB-thread-4-log</a>,
-<a href="./exp/script-tpch/sf8/log_sf8.tar.gz">MonetDB-thread-8-log</a>, and
-<a href="./exp/script-tpch/sf16/log_sf16.tar.gz">MonetDB-thread-16-log</a>,
+<a href="./exp/script-tpch/sf1/" target="_blank">MonetDB-thread-1-log</a>,
+<a href="./exp/script-tpch/sf2/" target="_blank">MonetDB-thread-2-log</a>,
+<a href="./exp/script-tpch/sf4/" target="_blank">MonetDB-thread-4-log</a>,
+<a href="./exp/script-tpch/sf8/" target="_blank">MonetDB-thread-8-log</a>, and
+<a href="./exp/script-tpch/sf16/" target="_blank">MonetDB-thread-16-log</a>,
 </td>
 </tr>
 </table>
