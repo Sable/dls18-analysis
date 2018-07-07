@@ -24,11 +24,10 @@ experiments.
 In this repository, you will find:
 
 - the software you need to install (<u>[Sec. 2](#2-prerequisites)</u>);
-- the supplementary materials which describe our queries in details (<u>[Sec. 3](#3-supplementary-materials)</u>);
-- how to configure databases (<u>[Sec. 4](#4-configure-databases)</u>);
-- how to run experiments (<u>[Sec. 5](#5-experiments)</u>);
-- the results used in the paper (<u>[Sec. 6](#6-results)</u>);
-- the contacts if you have any further questions (<u>[Sec. 7](#7-contact)</u>).
+- how to configure databases (<u>[Sec. 3](#3-configure-databases)</u>);
+- how to run experiments (<u>[Sec. 4](#4-experiments)</u>);
+- the results used in the paper (<u>[Sec. 5](#5-results)</u>);
+- the contacts if you have any further questions (<u>[Sec. 6](#6-contact)</u>).
 
 *The logo was based on an anonymous horse and [Laurie's
 dragon](http://www.cs.mcgill.ca/~cs520/2017/images/dragon.lowres.jpg).*
@@ -47,7 +46,7 @@ Please install the following systems before you go to next sections.
     - TPC-H: version v2.17.0
     - GCC-7: version v7.2.0
     - MonetDB: version Jul2017-SP2
-    - HorseIR system
+    - HorseIR
 
 ### TPC-H
 
@@ -64,7 +63,7 @@ In our local tests, we selected 8 queries which were saved in
 
     <DIR_EXP>/query/chf/
 
-Moreover, 5 databases with 5 different scale factors (SF) were created as
+Moreover, 5 databases with 5 different scale factors (SF 1/2/4/8/16) were created as
 follows.
 
 ```shell
@@ -151,7 +150,7 @@ Reference: [How to install MonetDB and the instroduction of server and client
 programs.](https://www.monetdb.org/Documentation/Guide/Installation)
 
 
-### HorseIR System
+### HorseIR
 
 Download and install libraries (about 7 minutes)
 
@@ -161,7 +160,13 @@ Download and install libraries (about 7 minutes)
 
 Setup experiments
 
-*Pending*
+```shell
+    # build HorseIR system
+    (cd exp-dls18 && ./setup)
+
+    # setup and generate HorseIR programs from execution plans
+    (cd exp-dls18 && ./setup_translator)
+```
 
 <p align="right"> <a href="#horseir"> Back to top </a> </p>
 
@@ -258,7 +263,26 @@ details of the 10 runs can be found just above it with a single-column table
 
 ### 4.2 Run HorseIR with TPC-H queries
 
-*Pending*
+Run HorseIR with 8 queries and 15 times on SF 1/2/4/8/16, and report the average execution time (ms)
+
+```shell
+    # base dir is 'HorsePower'
+    (cd exp-dls18 && time ./run_all.sh)
+```
+
+The script `run_all.sh` sets different scales and invokes the script
+`test-thread.sh` for each scale. The script `test-thread.sh` computes each
+query 15 times and returns the average.  As a result, all output information is
+saved into a log file, for example, `sf1/log_thread_1.log` contains the
+information of all queries for SF 1.
+
+Fetch brief information from a log file
+
+```shell
+    cat sf1/log_thread_1.log | grep -E 'Run with 15 times|HorseIR Optimization Level'
+```
+
+All log files can be found in the folder [exp/script-tpch](./exp/script-tpch)
 
 ## 5. Results
 
