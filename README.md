@@ -318,14 +318,14 @@ An example HorseIR module
 <tr>
 <td width="50%"> <img src="docs/fig/fig_7.png" /> </td>
 <td> 
-See details in <a href="exp/plot">data and scripts for Figure 7.</a>.
+See details in <a href="exp/plot">data and scripts for Figure 7.</a>
 </td>
 </tr>
 
 <tr>
 <td> <img src="docs/fig/fig_8.png" /> </td>
 <td> 
-See details in <a href="exp/plot">data and scripts for Figure 8.</a>.
+See details in <a href="exp/plot">data and scripts for Figure 8.</a>
 </td>
 </tr>
 </table>
@@ -342,7 +342,7 @@ See details in <a href="exp/plot">data and scripts for Figure 8.</a>.
 <td width="50%"> <img src="docs/fig/table_2_query_details.png" /> </td>
 <td> 
 See details in
-<a href="exp/query/chf">the selected 8 queries</a>
+<a href="exp/query/chf">the selected 8 queries.</a>
 </td>
 </tr>
 
@@ -363,8 +363,9 @@ See details in
 
 ## 6. Contact
 
-Hanfeng Chen,
-[hanfeng.chen@mail.mcgill.ca](mailto:hanfeng.chen@mail.mcgill.ca)
+If you have any questions regarding MonetDB or HorseIR, such as database
+configuration problems, please contact
+Hanfeng Chen ([hanfeng.chen@mail.mcgill.ca](mailto:hanfeng.chen@mail.mcgill.ca)).
 
 
 
