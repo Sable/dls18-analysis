@@ -157,7 +157,7 @@ Download HorseIR project from GitHub
 ```shell
     git clone git@github.com:Sable/HorsePower.git
     cd HorsePower
-    git checkout 7429de0628a57c412abcd34a8336c401f4816d85
+    git checkout 70aed87bcf11bfcc3727940e93fbee9e7e73452e
 ```
 
 Download and install libraries (about 7 minutes)
