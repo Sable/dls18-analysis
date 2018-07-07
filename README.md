@@ -152,6 +152,14 @@ programs.](https://www.monetdb.org/Documentation/Guide/Installation)
 
 ### HorseIR
 
+Download HorseIR project from GitHub
+
+```shell
+    git clone git@github.com:Sable/HorsePower.git
+    cd HorsePower
+    git checkout 7429de0628a57c412abcd34a8336c401f4816d85
+```
+
 Download and install libraries (about 7 minutes)
 
 ```shell
@@ -167,6 +175,10 @@ Setup experiments
     # setup and generate HorseIR programs from execution plans
     (cd exp-dls18 && ./setup_translator)
 ```
+
+External links
+
+- A LL-based grammar for the HorseIR translator: [click here](http://www.sable.mcgill.ca/~hanfeng.c/horse/docs/research/hyper/#horseir-translator)
 
 <p align="right"> <a href="#horseir"> Back to top </a> </p>
 
