@@ -176,6 +176,11 @@ Setup experiments
     (cd exp-dls18 && ./setup_translator)
 ```
 
+Troubleshooting
+
+- Remove an empty import statement in `genIR.py`
+    + Line `from analysis import * `
+
 External links
 
 - A LL-based grammar for the HorseIR translator: [click here](http://www.sable.mcgill.ca/~hanfeng.c/horse/docs/research/hyper/#horseir-translator)
